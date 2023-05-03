@@ -1,0 +1,18 @@
+<div *ngIf="randomActivity && !error">
+  <h3>Random activity:</h3>
+  <p>accessibility: {{randomActivity.accessibility}}</p>
+  <p>activity: {{randomActivity.activity}}</p>
+  <p>key: {{randomActivity.key}}</p>
+  <p>link: {{randomActivity.link}}</p>
+  <p>participants: {{randomActivity.participants}}</p>
+  <p>price: $ {{randomActivity.price}}</p>
+  <p>type: {{randomActivity.type}}</p>
+</div>
+
+<div *ngIf="!randomActivity && !error">
+  <h1>Cargando...</h1>
+</div>
+
+<div *ngIf="error">
+  <h1>{{error}}</h1>
+</div>
